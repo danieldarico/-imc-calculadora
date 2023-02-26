@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+
+    <title>Calcule IMC</title>
+</head>
+<body>
+
+  <main>
+    <section class="imc-section">
+      <h2>Calcule seu IMC</h2>
+      <form>
+        <div>
+          <label for="peso">Peso (Em Kg):</label>
+          <input type="number" id="peso" name="peso" required step="0.01" placeholder="Ex: 85.6">
+        </div>
+        <div>
+          <label for="altura">Altura(Em Metros):</label>
+          <input type="number" id="altura" name="altura" placeholder="Ex: 1.65" required step="0.01">
+        </div>
+        <button id="btn-calcular" type="submit">Calcular</button>
+      </form>
+      <div class="imc-result">
+        <p id="imc-value"></p>
+        <p id="imc-classification"></p>
+      </div>
+    </section>
+    <section class="table-section">
+      <h2>Índice de Massa Corporal</h2>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>IMC</th>
+              <th>CLASSIFICAÇÃO</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Menor que 18,5</td>
+              <td>Abaixo do peso</td>
+            </tr>
+            <tr>
+              <td>Entre 18,5 e 24,9</td>
+              <td>Peso Ideal</td>
+            </tr>
+            <tr>
+              <td>Entre 25,0 e 29,9</td>
+              <td>Sobrepeso</td>
+            </tr>
+            <tr>
+              <td>Entre 30,0 e 34,9</td>
+              <td>Obesidade Grau I</td>
+            </tr>
+            <tr>
+              <td>Entre 35,0 e 39,9</td>
+              <td>Obesidade Grau II</td>
+            </tr>
+            <tr>
+              <td>Maior que 40,0</td>
+              <td>Obesidade Grau III</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+
+
+</body>
+</html>
