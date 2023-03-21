@@ -1,7 +1,9 @@
 let btn = document.getElementById("btn-calcular");
+let imcResult = document.querySelector('.imc-result');
 
 btn.addEventListener("click", function (event){
   event.preventDefault();
+  imcResult.style.display = "block";
   
   let peso = parseFloat(document.getElementById("peso").value);
   let altura = parseFloat(document.getElementById("altura").value);
